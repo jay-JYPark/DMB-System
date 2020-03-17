@@ -1,0 +1,414 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{642C1E81-2B39-41DA-9476-98149DB9B5FC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DmbDSSystem</RootNamespace>
+    <AssemblyName>DmbDSSystem</AssemblyName>
+    <ManifestCertificateThumbprint>1832C42E4DB7FAB87AE979D41E1602E4455B2376</ManifestCertificateThumbprint>
+    <ManifestKeyFile>DmbDSSystem_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>false</GenerateManifests>
+    <TargetZone>LocalIntranet</TargetZone>
+    <SignManifests>true</SignManifests>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Documents and Settings\hp\바탕 화면\DSSystem_Setup\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <ApplicationRevision>2</ApplicationRevision>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\DMB_ICO_send.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ADClient">
+      <HintPath>..\NewDMB RefDll\ADClient.dll</HintPath>
+    </Reference>
+    <Reference Include="adcomm, Version=6.5.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\bin\adcomm.dll</HintPath>
+    </Reference>
+    <Reference Include="CsvLib">
+      <HintPath>..\..\..\..\..\bin\CsvLib.dll</HintPath>
+    </Reference>
+    <Reference Include="DMBBIZ">
+      <HintPath>..\..\..\..\..\..\..\..\Dropbox\공유폴더\DMB\DMBBIZ.dll</HintPath>
+    </Reference>
+    <Reference Include="dmbcomm, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\bin\dmbcomm.dll</HintPath>
+    </Reference>
+    <Reference Include="DMBFND">
+      <HintPath>..\..\..\..\..\..\..\..\Dropbox\공유폴더\DMB\DMBFND.dll</HintPath>
+    </Reference>
+    <Reference Include="DmbSocket">
+      <HintPath>..\NewDMB RefDll\DmbSocket.dll</HintPath>
+    </Reference>
+    <Reference Include="IRemoteMethod, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\bin\IRemoteMethod.dll</HintPath>
+    </Reference>
+    <Reference Include="NDP">
+      <HintPath>..\NewDMB RefDll\NDP.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WaitBar, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\bin\WaitBar.dll</HintPath>
+    </Reference>
+    <Reference Include="WinEventLog, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\bin\WinEventLog.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BroadPWMng.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BroadPWMng.Designer.cs">
+      <DependentUpon>BroadPWMng.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Confirm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Confirm.Designer.cs">
+      <DependentUpon>Confirm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlRequest.cs" />
+    <Compile Include="ControlSet.cs" />
+    <Compile Include="DmbData\TcpProfileData.cs" />
+    <Compile Include="DmbData\TcpProfileDataContainer.cs" />
+    <Compile Include="DmbData\TcpProfileMng.cs" />
+    <Compile Include="LogManager.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainViewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainViewForm.Designer.cs">
+      <DependentUpon>MainViewForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OptionDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OptionDlg.Designer.cs">
+      <DependentUpon>OptionDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrderListSet.cs" />
+    <Compile Include="PassWord.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BroadPWMng.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>BroadPWMng.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Confirm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Confirm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainViewForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OptionDlg.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OptionDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VersionForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>VersionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Secession.cs" />
+    <Compile Include="TcpCheck.cs" />
+    <Compile Include="VersionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VersionForm.Designer.cs">
+      <DependentUpon>VersionForm.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\about.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\about1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\megaphone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\remotecontrol2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\server_client2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\text_view.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\window_sidebar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\window_split_hor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\Control\DMB\DmbServerStat\DmbServerStat.csproj">
+      <Project>{183A0141-8157-4D07-87B3-646725F39A0A}</Project>
+      <Name>DmbServerStat</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Library\DMB\ADObject\ADObject.csproj">
+      <Project>{800EB8C1-3743-4552-BE66-7D3A008105E7}</Project>
+      <Name>ADObject</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\DmbMSSystem\DeviceControlP\DeviceControlP.csproj">
+      <Project>{C6955C10-5AA2-4F23-B749-869C521E7855}</Project>
+      <Name>DeviceControlP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DmbDataMng\DmbDataMng.csproj">
+      <Project>{698A2493-7AE0-4D56-A462-0F522C8FA2D2}</Project>
+      <Name>DmbDataMng</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DmbProtocol\DmbProtocol.csproj">
+      <Project>{4D246CCC-94A7-45A7-877E-8719D7C5A813}</Project>
+      <Name>DmbProtocol</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TcpCommon\TcpCommon.csproj">
+      <Project>{EE2C8C7C-6321-4D03-AE17-425DABA985EB}</Project>
+      <Name>TcpCommon</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bullet_ball_green%2824x24%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <BaseApplicationManifest Include="Properties\app.manifest" />
+    <None Include="Resources\bullet_ball_red%2824x24%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\megaphone%2848x48%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\megaphone%2832x32%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\megaphone%28128x128%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\megaphone%2864x64%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\led_green%2832x32%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\led_green%2848x48%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\led_green%2864x64%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\led_green%28128x128%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\led_red%2832x32%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\led_red%2848x48%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\led_red%2864x64%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\led_red%28128x128%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DMB_main.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DMB_sub.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DMB_subsub.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DMB_title.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DMB_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bullet_ball_green%2832x32%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bullet_ball_green%2848x48%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bullet_ball_red%2832x32%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bullet_ball_red%2848x48%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ticon_8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Micon_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Micon_8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Micon_7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DMB_dialogue_control.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DMB_dialogue_Bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DMB_bar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DMB_infoBg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DMB_systemGreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DMB_systemRed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DMB_subsub_Bar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DMB_title_broadcasting.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DMB_ICO_send.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DMB_systemGreen1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DMB_systemOrange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DMB_systemRed1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DMB_main_CautionHistory.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DMB_main_eventLog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DMB_main_caution.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DMB_main_control.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DMB_reset.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DMB_infoBg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Notify.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DMB_glass.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

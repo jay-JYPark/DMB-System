@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EWS_emulater", "EWS_emulater\EWS_emulater.csproj", "{E45C0A77-9F45-480A-A341-18508159D4D4}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TcpCommon", "TcpCommon\TcpCommon.csproj", "{D00B6BF3-59C5-4A0F-92C0-CAFD45FF087B}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "EWS_Emulater_Setup", "EWS_Emulater_Setup\EWS_Emulater_Setup.vdproj", "{5AB08AF4-C7DA-468F-ADF4-FD5330074B70}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeviceResProto", "DeviceResProto\DeviceResProto.csproj", "{073FDD82-80A2-474A-B165-B215FBB63458}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmulDataMng", "EmulDataMng\EmulDataMng.csproj", "{17FB5DB7-F166-4E86-AEC4-215BEEAEF647}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E45C0A77-9F45-480A-A341-18508159D4D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E45C0A77-9F45-480A-A341-18508159D4D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E45C0A77-9F45-480A-A341-18508159D4D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E45C0A77-9F45-480A-A341-18508159D4D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D00B6BF3-59C5-4A0F-92C0-CAFD45FF087B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D00B6BF3-59C5-4A0F-92C0-CAFD45FF087B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D00B6BF3-59C5-4A0F-92C0-CAFD45FF087B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D00B6BF3-59C5-4A0F-92C0-CAFD45FF087B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AB08AF4-C7DA-468F-ADF4-FD5330074B70}.Debug|Any CPU.ActiveCfg = Debug
+		{5AB08AF4-C7DA-468F-ADF4-FD5330074B70}.Release|Any CPU.ActiveCfg = Release
+		{073FDD82-80A2-474A-B165-B215FBB63458}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{073FDD82-80A2-474A-B165-B215FBB63458}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{073FDD82-80A2-474A-B165-B215FBB63458}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{073FDD82-80A2-474A-B165-B215FBB63458}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17FB5DB7-F166-4E86-AEC4-215BEEAEF647}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17FB5DB7-F166-4E86-AEC4-215BEEAEF647}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17FB5DB7-F166-4E86-AEC4-215BEEAEF647}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17FB5DB7-F166-4E86-AEC4-215BEEAEF647}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

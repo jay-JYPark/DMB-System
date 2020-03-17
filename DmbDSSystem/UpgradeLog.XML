@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="DmbDSSystem">
+</Property><Property Name="솔루션 파일" Value="C:\~project\DMB\ADEng\module\DMB\DmbDSSystem_2010\DmbDSSystem\DmbDSSystem.sln">
+</Property><Property Name="Date" Value="2013년 7월 10일 수요일">
+</Property><Property Name="Time" Value="오후 14:43">
+</Property></Properties><Event ErrorLevel="1" Project="DmbProtocol" Source="DmbProtocol\DmbProtocol.csproj" Description="프로젝트가 .NET Framework 2.0 또는 3.0을 대상으로 합니다. 프로젝트에서 최신 .NET Framework를 필요로 하는 어셈블리를 사용하는 경우 프로젝트를 빌드할 수 없습니다. 프로젝트 메뉴에서 [속성]을 클릭하고 '.NET Framework' 드롭다운 상자에서 새 버전을 선택하면 .NET Framework 버전을 변경할 수 있습니다. Visual Basic의 경우 이 옵션이 '고급 컴파일러 옵션...' 단추를 클릭하면 나타나는 [컴파일] 탭에 있습니다.">
+</Event><Event ErrorLevel="0" Project="DmbProtocol" Source="DmbProtocol\DmbProtocol.csproj" Description="프로젝트를 변환했습니다.">
+</Event><Event ErrorLevel="3" Project="DmbProtocol" Source="DmbProtocol\DmbProtocol.csproj" Description="Converted">
+</Event><Event ErrorLevel="1" Project="WMsgTest" Source="WMsgTest\WMsgTest.csproj" Description="프로젝트가 .NET Framework 2.0 또는 3.0을 대상으로 합니다. 프로젝트에서 최신 .NET Framework를 필요로 하는 어셈블리를 사용하는 경우 프로젝트를 빌드할 수 없습니다. 프로젝트 메뉴에서 [속성]을 클릭하고 '.NET Framework' 드롭다운 상자에서 새 버전을 선택하면 .NET Framework 버전을 변경할 수 있습니다. Visual Basic의 경우 이 옵션이 '고급 컴파일러 옵션...' 단추를 클릭하면 나타나는 [컴파일] 탭에 있습니다.">
+</Event><Event ErrorLevel="0" Project="WMsgTest" Source="WMsgTest\WMsgTest.csproj" Description="프로젝트를 변환했습니다.">
+</Event><Event ErrorLevel="3" Project="WMsgTest" Source="WMsgTest\WMsgTest.csproj" Description="Converted">
+</Event><Event ErrorLevel="1" Project="TcpCommon" Source="TcpCommon\TcpCommon.csproj" Description="프로젝트가 .NET Framework 2.0 또는 3.0을 대상으로 합니다. 프로젝트에서 최신 .NET Framework를 필요로 하는 어셈블리를 사용하는 경우 프로젝트를 빌드할 수 없습니다. 프로젝트 메뉴에서 [속성]을 클릭하고 '.NET Framework' 드롭다운 상자에서 새 버전을 선택하면 .NET Framework 버전을 변경할 수 있습니다. Visual Basic의 경우 이 옵션이 '고급 컴파일러 옵션...' 단추를 클릭하면 나타나는 [컴파일] 탭에 있습니다.">
+</Event><Event ErrorLevel="0" Project="TcpCommon" Source="TcpCommon\TcpCommon.csproj" Description="프로젝트를 변환했습니다.">
+</Event><Event ErrorLevel="3" Project="TcpCommon" Source="TcpCommon\TcpCommon.csproj" Description="Converted">
+</Event><Event ErrorLevel="1" Project="WinEventLog" Source="..\..\..\..\Library\DMB\WinEventLog\WinEventLog.csproj" Description="프로젝트가 .NET Framework 2.0 또는 3.0을 대상으로 합니다. 프로젝트에서 최신 .NET Framework를 필요로 하는 어셈블리를 사용하는 경우 프로젝트를 빌드할 수 없습니다. 프로젝트 메뉴에서 [속성]을 클릭하고 '.NET Framework' 드롭다운 상자에서 새 버전을 선택하면 .NET Framework 버전을 변경할 수 있습니다. Visual Basic의 경우 이 옵션이 '고급 컴파일러 옵션...' 단추를 클릭하면 나타나는 [컴파일] 탭에 있습니다.">
+</Event><Event ErrorLevel="0" Project="WinEventLog" Source="..\..\..\..\Library\DMB\WinEventLog\WinEventLog.csproj" Description="프로젝트를 변환했습니다.">
+</Event><Event ErrorLevel="3" Project="WinEventLog" Source="..\..\..\..\Library\DMB\WinEventLog\WinEventLog.csproj" Description="Converted">
+</Event><Event ErrorLevel="1" Project="DmbDSSystem" Source="DmbDSSystem\DmbDSSystem.csproj" Description="프로젝트가 .NET Framework 2.0 또는 3.0을 대상으로 합니다. 프로젝트에서 최신 .NET Framework를 필요로 하는 어셈블리를 사용하는 경우 프로젝트를 빌드할 수 없습니다. 프로젝트 메뉴에서 [속성]을 클릭하고 '.NET Framework' 드롭다운 상자에서 새 버전을 선택하면 .NET Framework 버전을 변경할 수 있습니다. Visual Basic의 경우 이 옵션이 '고급 컴파일러 옵션...' 단추를 클릭하면 나타나는 [컴파일] 탭에 있습니다.">
+</Event><Event ErrorLevel="0" Project="DmbDSSystem" Source="DmbDSSystem\DmbDSSystem.csproj" Description="프로젝트를 변환했습니다.">
+</Event><Event ErrorLevel="3" Project="DmbDSSystem" Source="DmbDSSystem\DmbDSSystem.csproj" Description="Converted">
+</Event><Event ErrorLevel="1" Project="DmbDataMng" Source="DmbDataMng\DmbDataMng.csproj" Description="프로젝트가 .NET Framework 2.0 또는 3.0을 대상으로 합니다. 프로젝트에서 최신 .NET Framework를 필요로 하는 어셈블리를 사용하는 경우 프로젝트를 빌드할 수 없습니다. 프로젝트 메뉴에서 [속성]을 클릭하고 '.NET Framework' 드롭다운 상자에서 새 버전을 선택하면 .NET Framework 버전을 변경할 수 있습니다. Visual Basic의 경우 이 옵션이 '고급 컴파일러 옵션...' 단추를 클릭하면 나타나는 [컴파일] 탭에 있습니다.">
+</Event><Event ErrorLevel="0" Project="DmbDataMng" Source="DmbDataMng\DmbDataMng.csproj" Description="프로젝트를 변환했습니다.">
+</Event><Event ErrorLevel="3" Project="DmbDataMng" Source="DmbDataMng\DmbDataMng.csproj" Description="Converted">
+</Event><Event ErrorLevel="1" Project="ADObject" Source="..\..\..\..\Library\DMB\ADObject\ADObject.csproj" Description="프로젝트가 .NET Framework 2.0 또는 3.0을 대상으로 합니다. 프로젝트에서 최신 .NET Framework를 필요로 하는 어셈블리를 사용하는 경우 프로젝트를 빌드할 수 없습니다. 프로젝트 메뉴에서 [속성]을 클릭하고 '.NET Framework' 드롭다운 상자에서 새 버전을 선택하면 .NET Framework 버전을 변경할 수 있습니다. Visual Basic의 경우 이 옵션이 '고급 컴파일러 옵션...' 단추를 클릭하면 나타나는 [컴파일] 탭에 있습니다.">
+</Event><Event ErrorLevel="0" Project="ADObject" Source="..\..\..\..\Library\DMB\ADObject\ADObject.csproj" Description="프로젝트를 변환했습니다.">
+</Event><Event ErrorLevel="3" Project="ADObject" Source="..\..\..\..\Library\DMB\ADObject\ADObject.csproj" Description="Converted">
+</Event><Event ErrorLevel="1" Project="CsvLib" Source="..\..\..\..\Library\DMB\CsvLib\CsvLib.csproj" Description="프로젝트가 .NET Framework 2.0 또는 3.0을 대상으로 합니다. 프로젝트에서 최신 .NET Framework를 필요로 하는 어셈블리를 사용하는 경우 프로젝트를 빌드할 수 없습니다. 프로젝트 메뉴에서 [속성]을 클릭하고 '.NET Framework' 드롭다운 상자에서 새 버전을 선택하면 .NET Framework 버전을 변경할 수 있습니다. Visual Basic의 경우 이 옵션이 '고급 컴파일러 옵션...' 단추를 클릭하면 나타나는 [컴파일] 탭에 있습니다.">
+</Event><Event ErrorLevel="0" Project="CsvLib" Source="..\..\..\..\Library\DMB\CsvLib\CsvLib.csproj" Description="프로젝트를 변환했습니다.">
+</Event><Event ErrorLevel="3" Project="CsvLib" Source="..\..\..\..\Library\DMB\CsvLib\CsvLib.csproj" Description="Converted">
+</Event><Event ErrorLevel="1" Project="IRemoteMethod" Source="..\..\..\..\Library\DMB\IRemoteMethod\IRemoteMethod.csproj" Description="프로젝트가 .NET Framework 2.0 또는 3.0을 대상으로 합니다. 프로젝트에서 최신 .NET Framework를 필요로 하는 어셈블리를 사용하는 경우 프로젝트를 빌드할 수 없습니다. 프로젝트 메뉴에서 [속성]을 클릭하고 '.NET Framework' 드롭다운 상자에서 새 버전을 선택하면 .NET Framework 버전을 변경할 수 있습니다. Visual Basic의 경우 이 옵션이 '고급 컴파일러 옵션...' 단추를 클릭하면 나타나는 [컴파일] 탭에 있습니다.">
+</Event><Event ErrorLevel="0" Project="IRemoteMethod" Source="..\..\..\..\Library\DMB\IRemoteMethod\IRemoteMethod.csproj" Description="프로젝트를 변환했습니다.">
+</Event><Event ErrorLevel="3" Project="IRemoteMethod" Source="..\..\..\..\Library\DMB\IRemoteMethod\IRemoteMethod.csproj" Description="Converted">
+</Event><Event ErrorLevel="1" Project="DmbLogin" Source="..\..\..\..\Control\DMB\DmbLogin\DmbLogin.csproj" Description="프로젝트가 .NET Framework 2.0 또는 3.0을 대상으로 합니다. 프로젝트에서 최신 .NET Framework를 필요로 하는 어셈블리를 사용하는 경우 프로젝트를 빌드할 수 없습니다. 프로젝트 메뉴에서 [속성]을 클릭하고 '.NET Framework' 드롭다운 상자에서 새 버전을 선택하면 .NET Framework 버전을 변경할 수 있습니다. Visual Basic의 경우 이 옵션이 '고급 컴파일러 옵션...' 단추를 클릭하면 나타나는 [컴파일] 탭에 있습니다.">
+</Event><Event ErrorLevel="0" Project="DmbLogin" Source="..\..\..\..\Control\DMB\DmbLogin\DmbLogin.csproj" Description="프로젝트를 변환했습니다.">
+</Event><Event ErrorLevel="3" Project="DmbLogin" Source="..\..\..\..\Control\DMB\DmbLogin\DmbLogin.csproj" Description="Converted">
+</Event><Event ErrorLevel="1" Project="WaitBar" Source="..\..\..\..\Control\DMB\WaitBar\WaitBar.csproj" Description="프로젝트가 .NET Framework 2.0 또는 3.0을 대상으로 합니다. 프로젝트에서 최신 .NET Framework를 필요로 하는 어셈블리를 사용하는 경우 프로젝트를 빌드할 수 없습니다. 프로젝트 메뉴에서 [속성]을 클릭하고 '.NET Framework' 드롭다운 상자에서 새 버전을 선택하면 .NET Framework 버전을 변경할 수 있습니다. Visual Basic의 경우 이 옵션이 '고급 컴파일러 옵션...' 단추를 클릭하면 나타나는 [컴파일] 탭에 있습니다.">
+</Event><Event ErrorLevel="0" Project="WaitBar" Source="..\..\..\..\Control\DMB\WaitBar\WaitBar.csproj" Description="프로젝트를 변환했습니다.">
+</Event><Event ErrorLevel="3" Project="WaitBar" Source="..\..\..\..\Control\DMB\WaitBar\WaitBar.csproj" Description="Converted">
+</Event><Event ErrorLevel="1" Project="Splash" Source="..\..\..\..\Control\DMB\Splash\Splash.csproj" Description="프로젝트가 .NET Framework 2.0 또는 3.0을 대상으로 합니다. 프로젝트에서 최신 .NET Framework를 필요로 하는 어셈블리를 사용하는 경우 프로젝트를 빌드할 수 없습니다. 프로젝트 메뉴에서 [속성]을 클릭하고 '.NET Framework' 드롭다운 상자에서 새 버전을 선택하면 .NET Framework 버전을 변경할 수 있습니다. Visual Basic의 경우 이 옵션이 '고급 컴파일러 옵션...' 단추를 클릭하면 나타나는 [컴파일] 탭에 있습니다.">
+</Event><Event ErrorLevel="0" Project="Splash" Source="..\..\..\..\Control\DMB\Splash\Splash.csproj" Description="프로젝트를 변환했습니다.">
+</Event><Event ErrorLevel="3" Project="Splash" Source="..\..\..\..\Control\DMB\Splash\Splash.csproj" Description="Converted">
+</Event><Event ErrorLevel="1" Project="DmbServerStat" Source="..\..\..\..\Control\DMB\DmbServerStat\DmbServerStat.csproj" Description="프로젝트가 .NET Framework 2.0 또는 3.0을 대상으로 합니다. 프로젝트에서 최신 .NET Framework를 필요로 하는 어셈블리를 사용하는 경우 프로젝트를 빌드할 수 없습니다. 프로젝트 메뉴에서 [속성]을 클릭하고 '.NET Framework' 드롭다운 상자에서 새 버전을 선택하면 .NET Framework 버전을 변경할 수 있습니다. Visual Basic의 경우 이 옵션이 '고급 컴파일러 옵션...' 단추를 클릭하면 나타나는 [컴파일] 탭에 있습니다.">
+</Event><Event ErrorLevel="0" Project="DmbServerStat" Source="..\..\..\..\Control\DMB\DmbServerStat\DmbServerStat.csproj" Description="프로젝트를 변환했습니다.">
+</Event><Event ErrorLevel="3" Project="DmbServerStat" Source="..\..\..\..\Control\DMB\DmbServerStat\DmbServerStat.csproj" Description="Converted">
+</Event><Event ErrorLevel="1" Project="aDCClient" Source="..\..\..\..\Control\DMB\ADDCCClient_TCP개선\aDCClient.csproj" Description="프로젝트가 .NET Framework 2.0 또는 3.0을 대상으로 합니다. 프로젝트에서 최신 .NET Framework를 필요로 하는 어셈블리를 사용하는 경우 프로젝트를 빌드할 수 없습니다. 프로젝트 메뉴에서 [속성]을 클릭하고 '.NET Framework' 드롭다운 상자에서 새 버전을 선택하면 .NET Framework 버전을 변경할 수 있습니다. Visual Basic의 경우 이 옵션이 '고급 컴파일러 옵션...' 단추를 클릭하면 나타나는 [컴파일] 탭에 있습니다.">
+</Event><Event ErrorLevel="0" Project="aDCClient" Source="..\..\..\..\Control\DMB\ADDCCClient_TCP개선\aDCClient.csproj" Description="프로젝트를 변환했습니다.">
+</Event><Event ErrorLevel="3" Project="aDCClient" Source="..\..\..\..\Control\DMB\ADDCCClient_TCP개선\aDCClient.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="DmbDSSystem.sln" Description="솔루션을 변환했습니다.">
+</Event><Event ErrorLevel="3" Project="" Source="DmbDSSystem.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="DmbProtocol" Source="DmbProtocol\DmbProtocol.csproj" Description="검사 완료: 프로젝트 파일을 업그레이드할 필요가 없습니다.">
+</Event><Event ErrorLevel="0" Project="WMsgTest" Source="WMsgTest\WMsgTest.csproj" Description="검사 완료: 프로젝트 파일을 업그레이드할 필요가 없습니다.">
+</Event><Event ErrorLevel="0" Project="TcpCommon" Source="TcpCommon\TcpCommon.csproj" Description="검사 완료: 프로젝트 파일을 업그레이드할 필요가 없습니다.">
+</Event><Event ErrorLevel="0" Project="WinEventLog" Source="..\..\..\..\Library\DMB\WinEventLog\WinEventLog.csproj" Description="검사 완료: 프로젝트 파일을 업그레이드할 필요가 없습니다.">
+</Event><Event ErrorLevel="0" Project="DmbDSSystem" Source="DmbDSSystem\DmbDSSystem.csproj" Description="검사 완료: 프로젝트 파일을 업그레이드할 필요가 없습니다.">
+</Event><Event ErrorLevel="0" Project="DmbDataMng" Source="DmbDataMng\DmbDataMng.csproj" Description="검사 완료: 프로젝트 파일을 업그레이드할 필요가 없습니다.">
+</Event><Event ErrorLevel="0" Project="ADObject" Source="..\..\..\..\Library\DMB\ADObject\ADObject.csproj" Description="검사 완료: 프로젝트 파일을 업그레이드할 필요가 없습니다.">
+</Event><Event ErrorLevel="0" Project="CsvLib" Source="..\..\..\..\Library\DMB\CsvLib\CsvLib.csproj" Description="검사 완료: 프로젝트 파일을 업그레이드할 필요가 없습니다.">
+</Event><Event ErrorLevel="0" Project="IRemoteMethod" Source="..\..\..\..\Library\DMB\IRemoteMethod\IRemoteMethod.csproj" Description="검사 완료: 프로젝트 파일을 업그레이드할 필요가 없습니다.">
+</Event><Event ErrorLevel="0" Project="DmbLogin" Source="..\..\..\..\Control\DMB\DmbLogin\DmbLogin.csproj" Description="검사 완료: 프로젝트 파일을 업그레이드할 필요가 없습니다.">
+</Event><Event ErrorLevel="0" Project="WaitBar" Source="..\..\..\..\Control\DMB\WaitBar\WaitBar.csproj" Description="검사 완료: 프로젝트 파일을 업그레이드할 필요가 없습니다.">
+</Event><Event ErrorLevel="0" Project="Splash" Source="..\..\..\..\Control\DMB\Splash\Splash.csproj" Description="검사 완료: 프로젝트 파일을 업그레이드할 필요가 없습니다.">
+</Event><Event ErrorLevel="0" Project="DmbServerStat" Source="..\..\..\..\Control\DMB\DmbServerStat\DmbServerStat.csproj" Description="검사 완료: 프로젝트 파일을 업그레이드할 필요가 없습니다.">
+</Event><Event ErrorLevel="0" Project="aDCClient" Source="..\..\..\..\Control\DMB\ADDCCClient_TCP개선\aDCClient.csproj" Description="검사 완료: 프로젝트 파일을 업그레이드할 필요가 없습니다.">
+</Event></UpgradeLog>

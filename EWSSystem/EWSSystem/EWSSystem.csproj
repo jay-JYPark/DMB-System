@@ -1,0 +1,326 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5DF621A7-029F-47F0-B7D6-CA5E3CA83F87}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EWSSystem</RootNamespace>
+    <AssemblyName>EWSSystem</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Oracle.DataAccess, Version=2.102.2.20, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\oracle\product\10.1.0_Client\Db_1\ODP.NET\bin\2.x\Oracle.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DbConn.cs" />
+    <Compile Include="HistoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HistoryForm.Designer.cs">
+      <DependentUpon>HistoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainViewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainViewForm.Designer.cs">
+      <DependentUpon>MainViewForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OptionDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OptionDialog.Designer.cs">
+      <DependentUpon>OptionDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="ProgramInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProgramInfoForm.Designer.cs">
+      <DependentUpon>ProgramInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Web References\Factum\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="HistoryForm.resx">
+      <DependentUpon>HistoryForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainViewForm.resx">
+      <DependentUpon>MainViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OptionDialog.resx">
+      <DependentUpon>OptionDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProgramInfoForm.resx">
+      <DependentUpon>ProgramInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Web References\Factum\Announcement.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Factum\Application.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Factum\Component.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Factum\DabCtrlApi.wsdl" />
+    <None Include="Web References\Factum\Entry.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Factum\Link.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Factum\ProgramType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Factum\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="WSDL\DabCtrlApi.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DAC\DAC.csproj">
+      <Project>{D2541C0C-D374-49D8-B693-04F2B3CA801B}</Project>
+      <Name>DAC</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MUX\MUX.csproj">
+      <Project>{0FA90B16-8D7C-4F3F-9A1C-CD8824AC280C}</Project>
+      <Name>MUX</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Protocol\DmbProtocol.csproj">
+      <Project>{542FDA35-0D67-4054-879B-00755AE7E936}</Project>
+      <Name>DmbProtocol</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SessionManager\TCPServer.csproj">
+      <Project>{01CBF1C7-4C83-4A6A-B2D7-958C670D6F00}</Project>
+      <Name>TCPServer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TextLog\Log.csproj">
+      <Project>{DD1F3E84-8FCF-4BB3-BC2B-D2E2E15A5B23}</Project>
+      <Name>Log</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\about.png" />
+    <EmbeddedResource Include="Resources\DMB_arrow.png" />
+    <EmbeddedResource Include="Resources\DMB_arrowDown.png" />
+    <EmbeddedResource Include="Resources\DMB_arrowUp.png" />
+    <EmbeddedResource Include="Resources\DMB_arrow_s.png" />
+    <EmbeddedResource Include="Resources\DMB_bar.jpg" />
+    <EmbeddedResource Include="Resources\DMB_bg.png" />
+    <EmbeddedResource Include="Resources\DMB_blank.png" />
+    <EmbeddedResource Include="Resources\DMB_cancel.png" />
+    <EmbeddedResource Include="Resources\DMB_controlList.png" />
+    <EmbeddedResource Include="Resources\DMB_delete.png" />
+    <EmbeddedResource Include="Resources\DMB_deleteAll.png" />
+    <EmbeddedResource Include="Resources\DMB_dialogue_addMap.png" />
+    <EmbeddedResource Include="Resources\DMB_dialogue_Bg.png" />
+    <EmbeddedResource Include="Resources\DMB_dialogue_control.png" />
+    <EmbeddedResource Include="Resources\DMB_dialogue_frame.png" />
+    <EmbeddedResource Include="Resources\DMB_dialogue_groupControl.png" />
+    <EmbeddedResource Include="Resources\DMB_dialogue_groupInfo.png" />
+    <EmbeddedResource Include="Resources\DMB_dialogue_groupSelect.png" />
+    <EmbeddedResource Include="Resources\DMB_dialogue_receiverAdd.png" />
+    <EmbeddedResource Include="Resources\DMB_dialogue_receiverControl.png" />
+    <EmbeddedResource Include="Resources\DMB_dialogue_receiverSelect.png" />
+    <EmbeddedResource Include="Resources\DMB_dialogue_regionSelect.png" />
+    <EmbeddedResource Include="Resources\DMB_dialogue_SoundControl.png" />
+    <EmbeddedResource Include="Resources\DMB_dialogue_textControl.png" />
+    <EmbeddedResource Include="Resources\DMB_dialogue_weatherSelect.png" />
+    <EmbeddedResource Include="Resources\DMB_glass.png" />
+    <EmbeddedResource Include="Resources\DMB_group.png" />
+    <EmbeddedResource Include="Resources\DMB_ICO_caution.ico" />
+    <EmbeddedResource Include="Resources\DMB_infoBg.png" />
+    <EmbeddedResource Include="Resources\DMB_loading.gif" />
+    <EmbeddedResource Include="Resources\DMB_loadingBg.png" />
+    <EmbeddedResource Include="Resources\DMB_login.png" />
+    <EmbeddedResource Include="Resources\DMB_login_broadcastin.png" />
+    <EmbeddedResource Include="Resources\DMB_login_caution.png" />
+    <EmbeddedResource Include="Resources\DMB_login_connection.png" />
+    <EmbeddedResource Include="Resources\DMB_login_dbms.png" />
+    <EmbeddedResource Include="Resources\DMB_login_DMBcontrol.png" />
+    <EmbeddedResource Include="Resources\DMB_login_terminalControl.png" />
+    <EmbeddedResource Include="Resources\DMB_main_Bar.jpg" />
+    <EmbeddedResource Include="Resources\DMB_main_caution.png" />
+    <EmbeddedResource Include="Resources\DMB_main_cautionDefenceList.png" />
+    <EmbeddedResource Include="Resources\DMB_main_cautionDMBList.png" />
+    <EmbeddedResource Include="Resources\DMB_main_CautionHistory.png" />
+    <EmbeddedResource Include="Resources\DMB_main_cautionList.png" />
+    <EmbeddedResource Include="Resources\DMB_main_control.png" />
+    <EmbeddedResource Include="Resources\DMB_main_documentView.png" />
+    <EmbeddedResource Include="Resources\DMB_main_eventLog.png" />
+    <EmbeddedResource Include="Resources\DMB_main_history.png" />
+    <EmbeddedResource Include="Resources\DMB_main_main.png" />
+    <EmbeddedResource Include="Resources\DMB_main_monitoring.png" />
+    <EmbeddedResource Include="Resources\DMB_main_receiver.png" />
+    <EmbeddedResource Include="Resources\DMB_main_receiverView.png" />
+    <EmbeddedResource Include="Resources\DMB_main_regionSave.png" />
+    <EmbeddedResource Include="Resources\DMB_main_regionStatistics.png" />
+    <EmbeddedResource Include="Resources\DMB_main_weatherStatistics.png" />
+    <EmbeddedResource Include="Resources\DMB_minibarOff.gif" />
+    <EmbeddedResource Include="Resources\DMB_minibarOn.jpg" />
+    <EmbeddedResource Include="Resources\DMB_play.png" />
+    <EmbeddedResource Include="Resources\DMB_receiver.png" />
+    <EmbeddedResource Include="Resources\DMB_receiverError.png" />
+    <EmbeddedResource Include="Resources\DMB_receiverError_G.png" />
+    <EmbeddedResource Include="Resources\DMB_receiverGroup.png" />
+    <EmbeddedResource Include="Resources\DMB_receiverMa.png" />
+    <EmbeddedResource Include="Resources\DMB_receiverMaMonitorError.png" />
+    <EmbeddedResource Include="Resources\DMB_receiverMaMonitorOk.png" />
+    <EmbeddedResource Include="Resources\DMB_receiverMaMonitorQ.png" />
+    <EmbeddedResource Include="Resources\DMB_receiverMonitorError.png" />
+    <EmbeddedResource Include="Resources\DMB_receiverMonitorOk.png" />
+    <EmbeddedResource Include="Resources\DMB_receiverMonitorQ.png" />
+    <EmbeddedResource Include="Resources\DMB_receiverOk.png" />
+    <EmbeddedResource Include="Resources\DMB_receiverRequest.png" />
+    <EmbeddedResource Include="Resources\DMB_receiverYu.png" />
+    <EmbeddedResource Include="Resources\DMB_receiverYuMonitorError.png" />
+    <EmbeddedResource Include="Resources\DMB_receiverYuMonitorOk.png" />
+    <EmbeddedResource Include="Resources\DMB_receiverYuMonitorQ.png" />
+    <EmbeddedResource Include="Resources\DMB_region.png" />
+    <EmbeddedResource Include="Resources\DMB_region2.png" />
+    <EmbeddedResource Include="Resources\DMB_regionGroup.png" />
+    <EmbeddedResource Include="Resources\DMB_region_blank.png" />
+    <EmbeddedResource Include="Resources\DMB_reset.png" />
+    <EmbeddedResource Include="Resources\DMB_selectAll.png" />
+    <EmbeddedResource Include="Resources\DMB_send.png" />
+    <EmbeddedResource Include="Resources\DMB_sendEnd.png" />
+    <EmbeddedResource Include="Resources\DMB_sendIng.png" />
+    <EmbeddedResource Include="Resources\DMB_send_caution.png" />
+    <EmbeddedResource Include="Resources\DMB_send_part2.png" />
+    <EmbeddedResource Include="Resources\DMB_server.png" />
+    <EmbeddedResource Include="Resources\DMB_specialBt.png" />
+    <EmbeddedResource Include="Resources\DMB_specialBtRed.png" />
+    <EmbeddedResource Include="Resources\DMB_stop.png" />
+    <EmbeddedResource Include="Resources\DMB_subsub_Bar.png" />
+    <EmbeddedResource Include="Resources\DMB_sub_Bar.jpg" />
+    <EmbeddedResource Include="Resources\DMB_systemGreen.png" />
+    <EmbeddedResource Include="Resources\DMB_systemGreen_12.png" />
+    <EmbeddedResource Include="Resources\DMB_systemGreen_44.png" />
+    <EmbeddedResource Include="Resources\DMB_systemOrange.png" />
+    <EmbeddedResource Include="Resources\DMB_systemOrange_12.png" />
+    <EmbeddedResource Include="Resources\DMB_systemRed.png" />
+    <EmbeddedResource Include="Resources\DMB_systemRed_12.png" />
+    <EmbeddedResource Include="Resources\DMB_systemRed_44.png" />
+    <EmbeddedResource Include="Resources\DMB_systemWhite.png" />
+    <EmbeddedResource Include="Resources\DMB_system_Gray_44.png" />
+    <EmbeddedResource Include="Resources\DMB_text.png" />
+    <EmbeddedResource Include="Resources\DMB_textbox.png" />
+    <EmbeddedResource Include="Resources\DMB_text_cbs.png" />
+    <EmbeddedResource Include="Resources\DMB_text_tts.png" />
+    <EmbeddedResource Include="Resources\DMB_title_Bar.jpg" />
+    <EmbeddedResource Include="Resources\DMB_title_caution.png" />
+    <EmbeddedResource Include="Resources\DMB_title_connection.png" />
+    <EmbeddedResource Include="Resources\DMB_title_dbms.png" />
+    <EmbeddedResource Include="Resources\DMB_title_DMBcontrol.png" />
+    <EmbeddedResource Include="Resources\DMB_title_history.png" />
+    <EmbeddedResource Include="Resources\DMB_title_statistics.png" />
+    <EmbeddedResource Include="Resources\DMB_title_terminalControl.png" />
+    <EmbeddedResource Include="Resources\DMB_weather.png" />
+    <EmbeddedResource Include="Resources\error.png" />
+    <EmbeddedResource Include="Resources\refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="C:\Program Files\A&amp;D\EWSSystem\WSDL\DabCtrlApi.wsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\Factum\</RelPath>
+      <UpdateFromURL>C:\Program Files\A&amp;D\EWSSystem\WSDL\DabCtrlApi.wsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>EWSSystem_Factum_DabCtrlApi</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\DMB_ICO_ews.ico" />
+    <Content Include="Resources\DMB_title_ews.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

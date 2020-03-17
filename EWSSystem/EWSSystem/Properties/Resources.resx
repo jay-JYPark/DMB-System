@@ -1,0 +1,481 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="about" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\about.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_arrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_arrow.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_arrowDown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_arrowDown.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_arrowUp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_arrowUp.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_arrow_s" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_arrow_s.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_bar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_bar.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_bg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_bg.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_blank" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_blank.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_cancel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_cancel.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_controlList" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_controlList.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_delete.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_deleteAll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_deleteAll.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_dialogue_addMap" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_dialogue_addMap.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_dialogue_Bg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_dialogue_Bg.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_dialogue_control" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_dialogue_control.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_dialogue_frame" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_dialogue_frame.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_dialogue_groupControl" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_dialogue_groupControl.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_dialogue_groupInfo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_dialogue_groupInfo.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_dialogue_groupSelect" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_dialogue_groupSelect.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_dialogue_receiverAdd" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_dialogue_receiverAdd.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_dialogue_receiverControl" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_dialogue_receiverControl.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_dialogue_receiverSelect" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_dialogue_receiverSelect.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_dialogue_regionSelect" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_dialogue_regionSelect.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_dialogue_SoundControl" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_dialogue_SoundControl.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_dialogue_textControl" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_dialogue_textControl.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_dialogue_weatherSelect" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_dialogue_weatherSelect.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_glass" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_glass.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_group" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_group.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_ICO_caution" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_ICO_caution.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_ICO_send" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_ICO_ews.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_infoBg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_infoBg.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_loading" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_loading.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_loadingBg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_loadingBg.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_login" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_login.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_login_broadcastin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_login_broadcastin.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_login_caution" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_login_caution.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_login_connection" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_login_connection.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_login_dbms" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_login_dbms.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_login_DMBcontrol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_login_DMBcontrol.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_login_terminalControl" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_login_terminalControl.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_main_Bar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_main_Bar.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_main_caution" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_main_caution.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_main_cautionDefenceList" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_main_cautionDefenceList.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_main_cautionDMBList" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_main_cautionDMBList.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_main_CautionHistory" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_main_CautionHistory.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_main_cautionList" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_main_cautionList.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_main_control" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_main_control.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_main_documentView" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_main_documentView.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_main_eventLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_main_eventLog.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_main_history" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_main_history.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_main_main" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_main_main.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_main_monitoring" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_main_monitoring.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_main_receiver" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_main_receiver.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_main_receiverView" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_main_receiverView.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_main_regionSave" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_main_regionSave.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_main_regionStatistics" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_main_regionStatistics.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_main_weatherStatistics" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_main_weatherStatistics.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_minibarOff" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_minibarOff.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_minibarOn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_minibarOn.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_play" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_play.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_receiver" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_receiver.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_receiverError" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_receiverError.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_receiverError_G" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_receiverError_G.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_receiverGroup" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_receiverGroup.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_receiverMa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_receiverMa.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_receiverMaMonitorError" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_receiverMaMonitorError.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_receiverMaMonitorOk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_receiverMaMonitorOk.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_receiverMaMonitorQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_receiverMaMonitorQ.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_receiverMonitorError" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_receiverMonitorError.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_receiverMonitorOk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_receiverMonitorOk.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_receiverMonitorQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_receiverMonitorQ.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_receiverOk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_receiverOk.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_receiverRequest" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_receiverRequest.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_receiverYu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_receiverYu.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_receiverYuMonitorError" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_receiverYuMonitorError.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_receiverYuMonitorOk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_receiverYuMonitorOk.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_receiverYuMonitorQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_receiverYuMonitorQ.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_region" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_region.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_region2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_region2.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_regionGroup" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_regionGroup.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_region_blank" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_region_blank.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_reset" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_reset.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_selectAll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_selectAll.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_send" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_send.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_sendEnd" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_sendEnd.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_sendIng" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_sendIng.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_send_caution" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_send_caution.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_send_part2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_send_part2.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_server" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_server.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_specialBt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_specialBt.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_specialBtRed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_specialBtRed.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_stop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_stop.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_subsub_Bar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_subsub_Bar.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_sub_Bar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_sub_Bar.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_systemGreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_systemGreen.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_systemGreen_12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_systemGreen_12.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_systemGreen_44" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_systemGreen_44.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_systemOrange" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_systemOrange.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_systemOrange_12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_systemOrange_12.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_systemRed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_systemRed.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_systemRed_12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_systemRed_12.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_systemRed_44" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_systemRed_44.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_systemWhite" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_systemWhite.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_system_Gray_44" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_system_Gray_44.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_text" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_text.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_textbox" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_textbox.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_text_cbs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_text_cbs.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_text_tts" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_text_tts.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_title_Bar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_title_Bar.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_title_broadcasting" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_title_ews.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_title_caution" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_title_caution.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_title_connection" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_title_connection.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_title_dbms" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_title_dbms.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_title_DMBcontrol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_title_DMBcontrol.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_title_history" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_title_history.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_title_statistics" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_title_statistics.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_title_terminalControl" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_title_terminalControl.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DMB_weather" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DMB_weather.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="error" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\error.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="refresh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\refresh.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>

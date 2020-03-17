@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DmbProtocol", "DmbProtocol\DmbProtocol.csproj", "{4D246CCC-94A7-45A7-877E-8719D7C5A813}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TcpCommon", "TcpCommon\TcpCommon.csproj", "{EE2C8C7C-6321-4D03-AE17-425DABA985EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DmbDSSystem", "DmbDSSystem\DmbDSSystem.csproj", "{642C1E81-2B39-41DA-9476-98149DB9B5FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DmbDataMng", "DmbDataMng\DmbDataMng.csproj", "{698A2493-7AE0-4D56-A462-0F522C8FA2D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ADObject", "..\..\..\..\Library\DMB\ADObject\ADObject.csproj", "{800EB8C1-3743-4552-BE66-7D3A008105E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DmbServerStat", "..\..\..\..\Control\DMB\DmbServerStat\DmbServerStat.csproj", "{183A0141-8157-4D07-87B3-646725F39A0A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeviceControlP", "..\..\DmbMSSystem\DeviceControlP\DeviceControlP.csproj", "{C6955C10-5AA2-4F23-B749-869C521E7855}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4D246CCC-94A7-45A7-877E-8719D7C5A813}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D246CCC-94A7-45A7-877E-8719D7C5A813}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D246CCC-94A7-45A7-877E-8719D7C5A813}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D246CCC-94A7-45A7-877E-8719D7C5A813}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE2C8C7C-6321-4D03-AE17-425DABA985EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE2C8C7C-6321-4D03-AE17-425DABA985EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE2C8C7C-6321-4D03-AE17-425DABA985EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE2C8C7C-6321-4D03-AE17-425DABA985EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{642C1E81-2B39-41DA-9476-98149DB9B5FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{642C1E81-2B39-41DA-9476-98149DB9B5FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{642C1E81-2B39-41DA-9476-98149DB9B5FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{642C1E81-2B39-41DA-9476-98149DB9B5FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{698A2493-7AE0-4D56-A462-0F522C8FA2D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{698A2493-7AE0-4D56-A462-0F522C8FA2D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{698A2493-7AE0-4D56-A462-0F522C8FA2D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{698A2493-7AE0-4D56-A462-0F522C8FA2D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{800EB8C1-3743-4552-BE66-7D3A008105E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{800EB8C1-3743-4552-BE66-7D3A008105E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{800EB8C1-3743-4552-BE66-7D3A008105E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{800EB8C1-3743-4552-BE66-7D3A008105E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{183A0141-8157-4D07-87B3-646725F39A0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{183A0141-8157-4D07-87B3-646725F39A0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{183A0141-8157-4D07-87B3-646725F39A0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{183A0141-8157-4D07-87B3-646725F39A0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6955C10-5AA2-4F23-B749-869C521E7855}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6955C10-5AA2-4F23-B749-869C521E7855}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6955C10-5AA2-4F23-B749-869C521E7855}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6955C10-5AA2-4F23-B749-869C521E7855}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

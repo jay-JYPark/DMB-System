@@ -1,0 +1,1437 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s0="factum.se/dab" xmlns:s="http://www.w3.org/2001/XMLSchema" targetNamespace="factum.se/dab" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <s:schema elementFormDefault="qualified" targetNamespace="factum.se/dab">
+      <s:element name="Authorization" type="s0:Authorization" />
+      <s:complexType name="Authorization">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Username" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Password" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="AccessLevel" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="RequestTimePlan">
+        <s:complexType />
+      </s:element>
+      <s:element name="TimePlanResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="EntryArray" type="s0:ArrayOfEntry" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfEntry">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Entry" nillable="true" type="s0:Entry" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Entry">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="time" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="configuration" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ArrayOfEntry" nillable="true" type="s0:ArrayOfEntry" />
+      <s:element name="RequestAllConfigurations">
+        <s:complexType />
+      </s:element>
+      <s:element name="AllConfigurationsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ConfigurationArray" type="s0:ArrayOfConfigurations" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfConfigurations">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="configuration" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ArrayOfConfigurations" nillable="true" type="s0:ArrayOfConfigurations" />
+      <s:element name="RequestBook">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Entry" type="s0:Entry" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BookResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Entry" type="s0:Entry" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RequestCancel">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Entry" type="s0:Entry" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CancelResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="RequestAllProgramTypes">
+        <s:complexType />
+      </s:element>
+      <s:element name="AllProgramTypesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InternationalArray" type="s0:ArrayOfIntCodes" />
+            <s:element minOccurs="1" maxOccurs="1" name="CoarseArray" type="s0:ArrayOfCoarseCodes" />
+            <s:element minOccurs="1" maxOccurs="1" name="FineArray" type="s0:ArrayOfFineCodes" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfIntCodes">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="internationalCode" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ArrayOfIntCodes" nillable="true" type="s0:ArrayOfIntCodes" />
+      <s:complexType name="ArrayOfCoarseCodes">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="coarseCode" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ArrayOfCoarseCodes" nillable="true" type="s0:ArrayOfCoarseCodes" />
+      <s:complexType name="ArrayOfFineCodes">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="fineCode" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ArrayOfFineCodes" nillable="true" type="s0:ArrayOfFineCodes" />
+      <s:element name="RequestProgramType">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ServiceId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProgramTypeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ProgramType" type="s0:ProgramType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ProgramType">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="internationalCode" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="coarseCode" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="fineCode1" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="fineCode2" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="RequestNewProgramType">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ServiceId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="ProgramType" type="s0:ProgramType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="NewProgramTypeResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="RequestLanguage">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ComponentId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LanguageResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Language" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RequestNewLanguage">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ComponentId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="Language" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="NewLanguageResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="RequestApplication">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ComponentId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ApplicationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ApplicationArray" type="s0:ArrayOfApplication" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Application">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="type" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="data" type="s:base64Binary" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfApplication">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="3" name="Application" nillable="true" type="s0:Application" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ArrayOfApplication" nillable="true" type="s0:ArrayOfApplication" />
+      <s:element name="RequestNewApplication">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ComponentId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="ApplicationArray" type="s0:ArrayOfApplication" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="NewApplicationResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="RequestServiceLabel">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ServiceId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ServiceLabelResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="LongLabel" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="ShortLabel" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RequestNewServiceLabel">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ServiceId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="LongLabel" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="ShortLabel" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="NewServiceLabelResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="RequestComponentLabel">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ComponentId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ComponentLabelResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="LongLabel" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="ShortLabel" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RequestNewComponentLabel">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ComponentId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="LongLabel" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="ShortLabel" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="NewComponentLabelResponse">
+        <s:complexType />
+      </s:element>
+      <s:complexType name="PNum">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="day" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="hour" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="minute" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="RequestSendPNum">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="OtherEnsemble" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="ServiceId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="PNum" type="s0:PNum" />
+            <s:element minOccurs="1" maxOccurs="1" name="Continuation" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendPNumResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="RequestSendPNumUpdate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="OtherEnsemble" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="Continuation" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="ServiceId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="PNum" type="s0:PNum" />
+            <s:element minOccurs="1" maxOccurs="1" name="NewServiceId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="NewPNum" type="s0:PNum" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendPNumUpdateResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="RequestStopPNum">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="OtherEnsemble" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="ServiceId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="StopPNumResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="RequestStopPNumUpdate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="OtherEnsemble" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="ServiceId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="PNum" type="s0:PNum" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="StopPNumUpdateResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="RequestStopAllPNums">
+        <s:complexType />
+      </s:element>
+      <s:element name="StopAllPNumsResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="RequestStartAnnouncement">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Cluster" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="Type" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="Region" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="New" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="SourceName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="StartAnnouncementResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RequestStopAnnouncement">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="StopAnnouncementResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="RequestActiveAnnouncements">
+        <s:complexType />
+      </s:element>
+      <s:complexType name="Announcement">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Cluster" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Type" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Region" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="New" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="SourceName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfAnnouncement">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Announcement" nillable="true" type="s0:Announcement" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ActiveAnnouncementsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AnnouncementArray" type="s0:ArrayOfAnnouncement" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RequestAllRegions">
+        <s:complexType />
+      </s:element>
+      <s:element name="AllRegionsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="RegionArray" type="s0:ArrayOfRegion" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfRegion">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Region" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ArrayOfRegion" nillable="true" type="s0:ArrayOfRegion" />
+      <s:element name="RequestAllClusters">
+        <s:complexType />
+      </s:element>
+      <s:element name="AllClustersResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ClusterArray" type="s0:ArrayOfCluster" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfCluster">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Cluster" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ArrayOfCluster" nillable="true" type="s0:ArrayOfCluster" />
+      <s:element name="RequestSendEmergencyWarning">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="MsgFlag" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="TCID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="EwsField" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendEmergencyWarningResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="RequestStopEmergencyWarning">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="MsgFlag" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="TCID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="EwsField" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="StopEmergencyWarningResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="RequestStopAllEmergencyWarnings">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="TCID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="StopAllEmergencyWarningsResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="RequestSendTrafficSystemMessage">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Scrambled" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="TCID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="SysMsg" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendTrafficSystemMessageResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="RequestStopTrafficSystemMessage">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Scrambled" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="TCID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="SysMsg" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="StopTrafficSystemMessageResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="RequestSendTrafficUserMessage">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Scrambled" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="TCID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="UserMsg" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendTrafficUserMessageResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="RequestStopTrafficUserMessage">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Scrambled" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="TCID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="UserMsg" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="StopTrafficUserMessageResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="RequestStopAllTrafficMessages">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="TCID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="StopAllTrafficMessagesResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="RequestSendTestFig">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="data" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendTestFigResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="RequestServiceLink">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Name" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ServiceLinkResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Link" type="s0:Link" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Link">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Name" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="SetNumber" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="HardFlag" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="OeFlag" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="IdQualifier" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="IdArray" type="s0:ArrayOfID" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfID">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="unbounded" name="ID" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ArrayOfID" type="s0:ArrayOfID" />
+      <s:element name="RequestAllServiceLinks">
+        <s:complexType />
+      </s:element>
+      <s:element name="AllServiceLinksResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="NameArray" type="s0:ArrayOfName" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfName">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Name" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ArrayOfName" nillable="true" type="s0:ArrayOfName" />
+      <s:element name="RequestNewServiceLink">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Link" type="s0:Link" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="NewServiceLinkResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="RequestRemoveServiceLink">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Name" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RemoveServiceLinkResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="RequestAllServiceComponents">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="configuration" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Component">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ServiceId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="ComponentId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="TMId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="SubChId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="SubChBitrate" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="SubChSize" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="SubChProtection" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="SampleRate" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfComponent">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Component" nillable="true" type="s0:Component" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="AllServiceComponentsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ComponentArray" type="s0:ArrayOfComponent" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </types>
+  <message name="InHeader">
+    <part name="Authorization" element="s0:Authorization" />
+  </message>
+  <message name="InTimePlan">
+    <part name="parameters" element="s0:RequestTimePlan" />
+  </message>
+  <message name="OutTimePlan">
+    <part name="parameters" element="s0:TimePlanResponse" />
+  </message>
+  <message name="InAllConfigurations">
+    <part name="parameters" element="s0:RequestAllConfigurations" />
+  </message>
+  <message name="OutAllConfigurations">
+    <part name="parameters" element="s0:AllConfigurationsResponse" />
+  </message>
+  <message name="InBook">
+    <part name="parameters" element="s0:RequestBook" />
+  </message>
+  <message name="OutBook">
+    <part name="parameters" element="s0:BookResponse" />
+  </message>
+  <message name="InCancel">
+    <part name="parameters" element="s0:RequestCancel" />
+  </message>
+  <message name="OutCancel">
+    <part name="parameters" element="s0:CancelResponse" />
+  </message>
+  <message name="InAllProgramTypes">
+    <part name="parameters" element="s0:RequestAllProgramTypes" />
+  </message>
+  <message name="OutAllProgramTypes">
+    <part name="parameters" element="s0:AllProgramTypesResponse" />
+  </message>
+  <message name="InProgramType">
+    <part name="parameters" element="s0:RequestProgramType" />
+  </message>
+  <message name="OutProgramType">
+    <part name="parameters" element="s0:ProgramTypeResponse" />
+  </message>
+  <message name="InNewProgramType">
+    <part name="parameters" element="s0:RequestNewProgramType" />
+  </message>
+  <message name="OutNewProgramType">
+    <part name="parameters" element="s0:NewProgramTypeResponse" />
+  </message>
+  <message name="InLanguage">
+    <part name="parameters" element="s0:RequestLanguage" />
+  </message>
+  <message name="OutLanguage">
+    <part name="parameters" element="s0:LanguageResponse" />
+  </message>
+  <message name="InNewLanguage">
+    <part name="parameters" element="s0:RequestNewLanguage" />
+  </message>
+  <message name="OutNewLanguage">
+    <part name="parameters" element="s0:NewLanguageResponse" />
+  </message>
+  <message name="InApplication">
+    <part name="parameters" element="s0:RequestApplication" />
+  </message>
+  <message name="OutApplication">
+    <part name="parameters" element="s0:ApplicationResponse" />
+  </message>
+  <message name="InNewApplication">
+    <part name="parameters" element="s0:RequestNewApplication" />
+  </message>
+  <message name="OutNewApplication">
+    <part name="parameters" element="s0:NewApplicationResponse" />
+  </message>
+  <message name="InServiceLabel">
+    <part name="parameters" element="s0:RequestServiceLabel" />
+  </message>
+  <message name="OutServiceLabel">
+    <part name="parameters" element="s0:ServiceLabelResponse" />
+  </message>
+  <message name="InNewServiceLabel">
+    <part name="parameters" element="s0:RequestNewServiceLabel" />
+  </message>
+  <message name="OutNewServiceLabel">
+    <part name="parameters" element="s0:NewServiceLabelResponse" />
+  </message>
+  <message name="InComponentLabel">
+    <part name="parameters" element="s0:RequestComponentLabel" />
+  </message>
+  <message name="OutComponentLabel">
+    <part name="parameters" element="s0:ComponentLabelResponse" />
+  </message>
+  <message name="InNewComponentLabel">
+    <part name="parameters" element="s0:RequestNewComponentLabel" />
+  </message>
+  <message name="OutNewComponentLabel">
+    <part name="parameters" element="s0:NewComponentLabelResponse" />
+  </message>
+  <message name="InSendPNum">
+    <part name="parameters" element="s0:RequestSendPNum" />
+  </message>
+  <message name="OutSendPNum">
+    <part name="parameters" element="s0:SendPNumResponse" />
+  </message>
+  <message name="InSendPNumUpdate">
+    <part name="parameters" element="s0:RequestSendPNumUpdate" />
+  </message>
+  <message name="OutSendPNumUpdate">
+    <part name="parameters" element="s0:SendPNumUpdateResponse" />
+  </message>
+  <message name="InStopPNum">
+    <part name="parameters" element="s0:RequestStopPNum" />
+  </message>
+  <message name="OutStopPNum">
+    <part name="parameters" element="s0:StopPNumResponse" />
+  </message>
+  <message name="InStopPNumUpdate">
+    <part name="parameters" element="s0:RequestStopPNumUpdate" />
+  </message>
+  <message name="OutStopPNumUpdate">
+    <part name="parameters" element="s0:StopPNumUpdateResponse" />
+  </message>
+  <message name="InStopAllPNums">
+    <part name="parameters" element="s0:RequestStopAllPNums" />
+  </message>
+  <message name="OutStopAllPNums">
+    <part name="parameters" element="s0:StopAllPNumsResponse" />
+  </message>
+  <message name="InStartAnnouncement">
+    <part name="parameters" element="s0:RequestStartAnnouncement" />
+  </message>
+  <message name="OutStartAnnouncement">
+    <part name="parameters" element="s0:StartAnnouncementResponse" />
+  </message>
+  <message name="InStopAnnouncement">
+    <part name="parameters" element="s0:RequestStopAnnouncement" />
+  </message>
+  <message name="OutStopAnnouncement">
+    <part name="parameters" element="s0:StopAnnouncementResponse" />
+  </message>
+  <message name="InActiveAnnouncements">
+    <part name="parameters" element="s0:RequestActiveAnnouncements" />
+  </message>
+  <message name="OutActiveAnnouncements">
+    <part name="parameters" element="s0:ActiveAnnouncementsResponse" />
+  </message>
+  <message name="InAllRegions">
+    <part name="parameters" element="s0:RequestAllRegions" />
+  </message>
+  <message name="OutAllRegions">
+    <part name="parameters" element="s0:AllRegionsResponse" />
+  </message>
+  <message name="InAllClusters">
+    <part name="parameters" element="s0:RequestAllClusters" />
+  </message>
+  <message name="OutAllClusters">
+    <part name="parameters" element="s0:AllClustersResponse" />
+  </message>
+  <message name="InSendEmergencyWarning">
+    <part name="parameters" element="s0:RequestSendEmergencyWarning" />
+  </message>
+  <message name="OutSendEmergencyWarning">
+    <part name="parameters" element="s0:SendEmergencyWarningResponse" />
+  </message>
+  <message name="InStopEmergencyWarning">
+    <part name="parameters" element="s0:RequestStopEmergencyWarning" />
+  </message>
+  <message name="OutStopEmergencyWarning">
+    <part name="parameters" element="s0:StopEmergencyWarningResponse" />
+  </message>
+  <message name="InStopAllEmergencyWarnings">
+    <part name="parameters" element="s0:RequestStopAllEmergencyWarnings" />
+  </message>
+  <message name="OutStopAllEmergencyWarnings">
+    <part name="parameters" element="s0:StopAllEmergencyWarningsResponse" />
+  </message>
+  <message name="InSendTrafficSystemMessage">
+    <part name="parameters" element="s0:RequestSendTrafficSystemMessage" />
+  </message>
+  <message name="OutSendTrafficSystemMessage">
+    <part name="parameters" element="s0:SendTrafficSystemMessageResponse" />
+  </message>
+  <message name="InStopTrafficSystemMessage">
+    <part name="parameters" element="s0:RequestStopTrafficSystemMessage" />
+  </message>
+  <message name="OutStopTrafficSystemMessage">
+    <part name="parameters" element="s0:StopTrafficSystemMessageResponse" />
+  </message>
+  <message name="InSendTrafficUserMessage">
+    <part name="parameters" element="s0:RequestSendTrafficUserMessage" />
+  </message>
+  <message name="OutSendTrafficUserMessage">
+    <part name="parameters" element="s0:SendTrafficUserMessageResponse" />
+  </message>
+  <message name="InStopTrafficUserMessage">
+    <part name="parameters" element="s0:RequestStopTrafficUserMessage" />
+  </message>
+  <message name="OutStopTrafficUserMessage">
+    <part name="parameters" element="s0:StopTrafficUserMessageResponse" />
+  </message>
+  <message name="InStopAllTrafficMessages">
+    <part name="parameters" element="s0:RequestStopAllTrafficMessages" />
+  </message>
+  <message name="OutStopAllTrafficMessages">
+    <part name="parameters" element="s0:StopAllTrafficMessagesResponse" />
+  </message>
+  <message name="InSendTestFig">
+    <part name="parameters" element="s0:RequestSendTestFig" />
+  </message>
+  <message name="OutSendTestFig">
+    <part name="parameters" element="s0:SendTestFigResponse" />
+  </message>
+  <message name="InServiceLink">
+    <part name="parameters" element="s0:RequestServiceLink" />
+  </message>
+  <message name="OutServiceLink">
+    <part name="parameters" element="s0:ServiceLinkResponse" />
+  </message>
+  <message name="InAllServiceLinks">
+    <part name="parameters" element="s0:RequestAllServiceLinks" />
+  </message>
+  <message name="OutAllServiceLinks">
+    <part name="parameters" element="s0:AllServiceLinksResponse" />
+  </message>
+  <message name="InNewServiceLink">
+    <part name="parameters" element="s0:RequestNewServiceLink" />
+  </message>
+  <message name="OutNewServiceLink">
+    <part name="parameters" element="s0:NewServiceLinkResponse" />
+  </message>
+  <message name="InRemoveServiceLink">
+    <part name="parameters" element="s0:RequestRemoveServiceLink" />
+  </message>
+  <message name="OutRemoveServiceLink">
+    <part name="parameters" element="s0:RemoveServiceLinkResponse" />
+  </message>
+  <message name="InAllServiceComponents">
+    <part name="parameters" element="s0:RequestAllServiceComponents" />
+  </message>
+  <message name="OutAllServiceComponents">
+    <part name="parameters" element="s0:AllServiceComponentsResponse" />
+  </message>
+  <portType name="ApiPort">
+    <operation name="RequestTimePlan">
+      <documentation>Get the current configuration time plan.</documentation>
+      <input name="InTimePlan" message="s0:InTimePlan" />
+      <output name="OutTimePlan" message="s0:OutTimePlan" />
+    </operation>
+    <operation name="RequestAllConfigurations">
+      <documentation>Get all configurations.</documentation>
+      <input name="InAllConfigurations" message="s0:InAllConfigurations" />
+      <output name="OutAllConfigurations" message="s0:OutAllConfigurations" />
+    </operation>
+    <operation name="RequestBook">
+      <documentation>Book a configuration for activation.</documentation>
+      <input name="InBook" message="s0:InBook" />
+      <output name="OutBook" message="s0:OutBook" />
+    </operation>
+    <operation name="RequestCancel">
+      <documentation>Cancel a booked activation.</documentation>
+      <input name="InCancel" message="s0:InCancel" />
+      <output name="OutCancel" message="s0:OutCancel" />
+    </operation>
+    <operation name="RequestAllProgramTypes">
+      <documentation>Get all program types.</documentation>
+      <input name="InAllProgramTypes" message="s0:InAllProgramTypes" />
+      <output name="OutAllProgramTypes" message="s0:OutAllProgramTypes" />
+    </operation>
+    <operation name="RequestProgramType">
+      <documentation>Get the current program type of a service.</documentation>
+      <input name="InProgramType" message="s0:InProgramType" />
+      <output name="OutProgramType" message="s0:OutProgramType" />
+    </operation>
+    <operation name="RequestNewProgramType">
+      <documentation>Change the program type of a service.</documentation>
+      <input name="InNewProgramType" message="s0:InNewProgramType" />
+      <output name="OutNewProgramType" message="s0:OutNewProgramType" />
+    </operation>
+    <operation name="RequestLanguage">
+      <documentation>Get the current language of a service component.</documentation>
+      <input name="InLanguage" message="s0:InLanguage" />
+      <output name="OutLanguage" message="s0:OutLanguage" />
+    </operation>
+    <operation name="RequestNewLanguage">
+      <documentation>Change the language of a service component.</documentation>
+      <input name="InNewLanguage" message="s0:InNewLanguage" />
+      <output name="OutNewLanguage" message="s0:OutNewLanguage" />
+    </operation>
+    <operation name="RequestApplication">
+      <documentation>Get the current user data applications of a service component.</documentation>
+      <input name="InApplication" message="s0:InApplication" />
+      <output name="OutApplication" message="s0:OutApplication" />
+    </operation>
+    <operation name="RequestNewApplication">
+      <documentation>Change the user data application of a service component.</documentation>
+      <input name="InNewApplication" message="s0:InNewApplication" />
+      <output name="OutNewApplication" message="s0:OutNewApplication" />
+    </operation>
+    <operation name="RequestServiceLabel">
+      <documentation>Get the current label of a service.</documentation>
+      <input name="InServiceLabel" message="s0:InServiceLabel" />
+      <output name="OutServiceLabel" message="s0:OutServiceLabel" />
+    </operation>
+    <operation name="RequestNewServiceLabel">
+      <documentation>Change the label of a service.</documentation>
+      <input name="InNewServiceLabel" message="s0:InNewServiceLabel" />
+      <output name="OutNewServiceLabel" message="s0:OutNewServiceLabel" />
+    </operation>
+    <operation name="RequestComponentLabel">
+      <documentation>Get the current label of a service component.</documentation>
+      <input name="InComponentLabel" message="s0:InComponentLabel" />
+      <output name="OutComponentLabel" message="s0:OutComponentLabel" />
+    </operation>
+    <operation name="RequestNewComponentLabel">
+      <documentation>Change the label of a service component.</documentation>
+      <input name="InNewComponentLabel" message="s0:InNewComponentLabel" />
+      <output name="OutNewComponentLabel" message="s0:OutNewComponentLabel" />
+    </operation>
+    <operation name="RequestSendPNum">
+      <documentation>Send a program number.</documentation>
+      <input name="InSendPNum" message="s0:InSendPNum" />
+      <output name="OutSendPNum" message="s0:OutSendPNum" />
+    </operation>
+    <operation name="RequestSendPNumUpdate">
+      <documentation>Send a program number update.</documentation>
+      <input name="InSendPNumUpdate" message="s0:InSendPNumUpdate" />
+      <output name="OutSendPNumUpdate" message="s0:OutSendPNumUpdate" />
+    </operation>
+    <operation name="RequestStopPNum">
+      <documentation>Stop sending a program number.</documentation>
+      <input name="InStopPNum" message="s0:InStopPNum" />
+      <output name="OutStopPNum" message="s0:OutStopPNum" />
+    </operation>
+    <operation name="RequestStopPNumUpdate">
+      <documentation>Stop sending a program number update.</documentation>
+      <input name="InStopPNumUpdate" message="s0:InStopPNumUpdate" />
+      <output name="OutStopPNumUpdate" message="s0:OutStopPNumUpdate" />
+    </operation>
+    <operation name="RequestStopAllPNums">
+      <documentation>Stop sending all program numbers.</documentation>
+      <input name="InStopAllPNums" message="s0:InStopAllPNums" />
+      <output name="OutStopAllPNums" message="s0:OutStopAllPNums" />
+    </operation>
+    <operation name="RequestStartAnnouncement">
+      <documentation>Start an announcement.</documentation>
+      <input name="InStartAnnouncement" message="s0:InStartAnnouncement" />
+      <output name="OutStartAnnouncement" message="s0:OutStartAnnouncement" />
+    </operation>
+    <operation name="RequestStopAnnouncement">
+      <documentation>Stop an announcement.</documentation>
+      <input name="InStopAnnouncement" message="s0:InStopAnnouncement" />
+      <output name="OutStopAnnouncement" message="s0:OutStopAnnouncement" />
+    </operation>
+    <operation name="RequestActiveAnnouncements">
+      <documentation>Get all active announcements.</documentation>
+      <input name="InActiveAnnouncements" message="s0:InActiveAnnouncements" />
+      <output name="OutActiveAnnouncements" message="s0:OutActiveAnnouncements" />
+    </operation>
+    <operation name="RequestAllRegions">
+      <documentation>Get all regions.</documentation>
+      <input name="InAllRegions" message="s0:InAllRegions" />
+      <output name="OutAllRegions" message="s0:OutAllRegions" />
+    </operation>
+    <operation name="RequestAllClusters">
+      <documentation>Get all clusters.</documentation>
+      <input name="InAllClusters" message="s0:InAllClusters" />
+      <output name="OutAllClusters" message="s0:OutAllClusters" />
+    </operation>
+    <operation name="RequestSendEmergencyWarning">
+      <documentation>Send an emergency warning.</documentation>
+      <input name="InSendEmergencyWarning" message="s0:InSendEmergencyWarning" />
+      <output name="OutSendEmergencyWarning" message="s0:OutSendEmergencyWarning" />
+    </operation>
+    <operation name="RequestStopEmergencyWarning">
+      <documentation>Stop an emergency warning.</documentation>
+      <input name="InStopEmergencyWarning" message="s0:InStopEmergencyWarning" />
+      <output name="OutStopEmergencyWarning" message="s0:OutStopEmergencyWarning" />
+    </operation>
+    <operation name="RequestStopAllEmergencyWarnings">
+      <documentation>Stop all emergency warnings in the specified channel.</documentation>
+      <input name="InStopAllEmergencyWarnings" message="s0:InStopAllEmergencyWarnings" />
+      <output name="OutStopAllEmergencyWarnings" message="s0:OutStopAllEmergencyWarnings" />
+    </operation>
+    <operation name="RequestSendTrafficSystemMessage">
+      <documentation>Send a traffic (TMC) system message.</documentation>
+      <input name="InSendTrafficSystemMessage" message="s0:InSendTrafficSystemMessage" />
+      <output name="OutSendTrafficSystemMessage" message="s0:OutSendTrafficSystemMessage" />
+    </operation>
+    <operation name="RequestStopTrafficSystemMessage">
+      <documentation>Stop a traffic (TMC) system message.</documentation>
+      <input name="InStopTrafficSystemMessage" message="s0:InStopTrafficSystemMessage" />
+      <output name="OutStopTrafficSystemMessage" message="s0:OutStopTrafficSystemMessage" />
+    </operation>
+    <operation name="RequestSendTrafficUserMessage">
+      <documentation>Send a traffic (TMC) user message.</documentation>
+      <input name="InSendTrafficUserMessage" message="s0:InSendTrafficUserMessage" />
+      <output name="OutSendTrafficUserMessage" message="s0:OutSendTrafficUserMessage" />
+    </operation>
+    <operation name="RequestStopTrafficUserMessage">
+      <documentation>Stop a traffic (TMC) user message.</documentation>
+      <input name="InStopTrafficUserMessage" message="s0:InStopTrafficUserMessage" />
+      <output name="OutStopTrafficUserMessage" message="s0:OutStopTrafficUserMessage" />
+    </operation>
+    <operation name="RequestStopAllTrafficMessages">
+      <documentation>Stop all traffic (TMC) messages on the specified channel.</documentation>
+      <input name="InStopAllTrafficMessages" message="s0:InStopAllTrafficMessages" />
+      <output name="OutStopAllTrafficMessages" message="s0:OutStopAllTrafficMessages" />
+    </operation>
+    <operation name="RequestSendTestFig">
+      <documentation>Send a fast information group.</documentation>
+      <input name="InSendTestFig" message="s0:InSendTestFig" />
+      <output name="OutSendTestFig" message="s0:OutSendTestFig" />
+    </operation>
+    <operation name="RequestServiceLink">
+      <documentation>Get a service link.</documentation>
+      <input name="InServiceLink" message="s0:InServiceLink" />
+      <output name="OutServiceLink" message="s0:OutServiceLink" />
+    </operation>
+    <operation name="RequestAllServiceLinks">
+      <documentation>Get the name of all service links.</documentation>
+      <input name="InAllServiceLinks" message="s0:InAllServiceLinks" />
+      <output name="OutAllServiceLinks" message="s0:OutAllServiceLinks" />
+    </operation>
+    <operation name="RequestNewServiceLink">
+      <documentation>Add or update a service link.</documentation>
+      <input name="InNewServiceLink" message="s0:InNewServiceLink" />
+      <output name="OutNewServiceLink" message="s0:OutNewServiceLink" />
+    </operation>
+    <operation name="RequestRemoveServiceLink">
+      <documentation>Remove a service link.</documentation>
+      <input name="InRemoveServiceLink" message="s0:InRemoveServiceLink" />
+      <output name="OutRemoveServiceLink" message="s0:OutRemoveServiceLink" />
+    </operation>
+    <operation name="RequestAllServiceComponents">
+      <documentation>Get all service components in a configuration.</documentation>
+      <input name="InAllServiceComponents" message="s0:InAllServiceComponents" />
+      <output name="OutAllServiceComponents" message="s0:OutAllServiceComponents" />
+    </operation>
+  </portType>
+  <binding name="ApiBinding" type="s0:ApiPort">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="RequestTimePlan">
+      <soap:operation soapAction="/DabCtrlApi" style="document" />
+      <input name="InTimePlan">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:InHeader" part="Authorization" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output name="OutTimePlan">
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="RequestAllConfigurations">
+      <soap:operation soapAction="/DabCtrlApi" style="document" />
+      <input name="InAllConfigurations">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:InHeader" part="Authorization" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output name="OutAllConfigurations">
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="RequestBook">
+      <soap:operation soapAction="/DabCtrlApi" style="document" />
+      <input name="InBook">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:InHeader" part="Authorization" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output name="OutBook">
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="RequestCancel">
+      <soap:operation soapAction="/DabCtrlApi" style="document" />
+      <input name="InCancel">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:InHeader" part="Authorization" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output name="OutCancel">
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="RequestAllProgramTypes">
+      <soap:operation soapAction="/DabCtrlApi" style="document" />
+      <input name="InAllProgramTypes">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:InHeader" part="Authorization" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output name="OutAllProgramTypes">
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="RequestProgramType">
+      <soap:operation soapAction="/DabCtrlApi" style="document" />
+      <input name="InProgramType">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:InHeader" part="Authorization" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output name="OutProgramType">
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="RequestNewProgramType">
+      <soap:operation soapAction="/DabCtrlApi" style="document" />
+      <input name="InNewProgramType">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:InHeader" part="Authorization" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output name="OutNewProgramType">
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="RequestLanguage">
+      <soap:operation soapAction="/DabCtrlApi" style="document" />
+      <input name="InLanguage">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:InHeader" part="Authorization" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output name="OutLanguage">
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="RequestNewLanguage">
+      <soap:operation soapAction="/DabCtrlApi" style="document" />
+      <input name="InNewLanguage">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:InHeader" part="Authorization" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output name="OutNewLanguage">
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="RequestApplication">
+      <soap:operation soapAction="/DabCtrlApi" style="document" />
+      <input name="InApplication">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:InHeader" part="Authorization" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output name="OutApplication">
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="RequestNewApplication">
+      <soap:operation soapAction="/DabCtrlApi" style="document" />
+      <input name="InNewApplication">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:InHeader" part="Authorization" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output name="OutNewApplication">
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="RequestServiceLabel">
+      <soap:operation soapAction="/DabCtrlApi" style="document" />
+      <input name="InServiceLabel">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:InHeader" part="Authorization" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output name="OutServiceLabel">
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="RequestNewServiceLabel">
+      <soap:operation soapAction="/DabCtrlApi" style="document" />
+      <input name="InNewServiceLabel">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:InHeader" part="Authorization" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output name="OutNewServiceLabel">
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="RequestComponentLabel">
+      <soap:operation soapAction="/DabCtrlApi" style="document" />
+      <input name="InComponentLabel">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:InHeader" part="Authorization" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output name="OutComponentLabel">
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="RequestNewComponentLabel">
+      <soap:operation soapAction="/DabCtrlApi" style="document" />
+      <input name="InNewComponentLabel">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:InHeader" part="Authorization" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output name="OutNewComponentLabel">
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="RequestSendPNum">
+      <soap:operation soapAction="/DabCtrlApi" style="document" />
+      <input name="InSendPNum">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:InHeader" part="Authorization" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output name="OutSendPNum">
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="RequestSendPNumUpdate">
+      <soap:operation soapAction="/DabCtrlApi" style="document" />
+      <input name="InSendPNumUpdate">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:InHeader" part="Authorization" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output name="OutSendPNumUpdate">
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="RequestStopPNum">
+      <soap:operation soapAction="/DabCtrlApi" style="document" />
+      <input name="InStopPNum">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:InHeader" part="Authorization" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output name="OutStopPNum">
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="RequestStopPNumUpdate">
+      <soap:operation soapAction="/DabCtrlApi" style="document" />
+      <input name="InStopPNumUpdate">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:InHeader" part="Authorization" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output name="OutStopPNumUpdate">
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="RequestStopAllPNums">
+      <soap:operation soapAction="/DabCtrlApi" style="document" />
+      <input name="InStopAllPNums">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:InHeader" part="Authorization" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output name="OutStopAllPNums">
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="RequestStartAnnouncement">
+      <soap:operation soapAction="/DabCtrlApi" style="document" />
+      <input name="InStartAnnouncement">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:InHeader" part="Authorization" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output name="OutStartAnnouncement">
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="RequestStopAnnouncement">
+      <soap:operation soapAction="/DabCtrlApi" style="document" />
+      <input name="InStopAnnouncement">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:InHeader" part="Authorization" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output name="OutStopAnnouncement">
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="RequestActiveAnnouncements">
+      <soap:operation soapAction="/DabCtrlApi" style="document" />
+      <input name="InActiveAnnouncements">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:InHeader" part="Authorization" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output name="OutActiveAnnouncements">
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="RequestAllRegions">
+      <soap:operation soapAction="/DabCtrlApi" style="document" />
+      <input name="InAllRegions">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:InHeader" part="Authorization" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output name="OutAllRegions">
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="RequestAllClusters">
+      <soap:operation soapAction="/DabCtrlApi" style="document" />
+      <input name="InAllClusters">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:InHeader" part="Authorization" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output name="OutAllClusters">
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="RequestSendEmergencyWarning">
+      <soap:operation soapAction="/DabCtrlApi" style="document" />
+      <input name="InSendEmergencyWarning">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:InHeader" part="Authorization" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output name="OutSendEmergencyWarning">
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="RequestStopEmergencyWarning">
+      <soap:operation soapAction="/DabCtrlApi" style="document" />
+      <input name="InStopEmergencyWarning">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:InHeader" part="Authorization" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output name="OutStopEmergencyWarning">
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="RequestStopAllEmergencyWarnings">
+      <soap:operation soapAction="/DabCtrlApi" style="document" />
+      <input name="InStopAllEmergencyWarnings">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:InHeader" part="Authorization" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output name="OutStopAllEmergencyWarnings">
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="RequestSendTrafficSystemMessage">
+      <soap:operation soapAction="/DabCtrlApi" style="document" />
+      <input name="InSendTrafficSystemMessage">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:InHeader" part="Authorization" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output name="OutSendTrafficSystemMessage">
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="RequestStopTrafficSystemMessage">
+      <soap:operation soapAction="/DabCtrlApi" style="document" />
+      <input name="InStopTrafficSystemMessage">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:InHeader" part="Authorization" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output name="OutStopTrafficSystemMessage">
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="RequestSendTrafficUserMessage">
+      <soap:operation soapAction="/DabCtrlApi" style="document" />
+      <input name="InSendTrafficUserMessage">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:InHeader" part="Authorization" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output name="OutSendTrafficUserMessage">
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="RequestStopTrafficUserMessage">
+      <soap:operation soapAction="/DabCtrlApi" style="document" />
+      <input name="InStopTrafficUserMessage">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:InHeader" part="Authorization" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output name="OutStopTrafficUserMessage">
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="RequestStopAllTrafficMessages">
+      <soap:operation soapAction="/DabCtrlApi" style="document" />
+      <input name="InStopAllTrafficMessages">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:InHeader" part="Authorization" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output name="OutStopAllTrafficMessages">
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="RequestSendTestFig">
+      <soap:operation soapAction="/DabCtrlApi" style="document" />
+      <input name="InSendTestFig">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:InHeader" part="Authorization" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output name="OutSendTestFig">
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="RequestServiceLink">
+      <soap:operation soapAction="/DabCtrlApi" style="document" />
+      <input name="InServiceLink">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:InHeader" part="Authorization" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output name="OutServiceLink">
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="RequestAllServiceLinks">
+      <soap:operation soapAction="/DabCtrlApi" style="document" />
+      <input name="InAllServiceLinks">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:InHeader" part="Authorization" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output name="OutAllServiceLinks">
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="RequestNewServiceLink">
+      <soap:operation soapAction="/DabCtrlApi" style="document" />
+      <input name="InNewServiceLink">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:InHeader" part="Authorization" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output name="OutNewServiceLink">
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="RequestRemoveServiceLink">
+      <soap:operation soapAction="/DabCtrlApi" style="document" />
+      <input name="InRemoveServiceLink">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:InHeader" part="Authorization" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output name="OutRemoveServiceLink">
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="RequestAllServiceComponents">
+      <soap:operation soapAction="/DabCtrlApi" style="document" />
+      <input name="InAllServiceComponents">
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:InHeader" part="Authorization" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output name="OutAllServiceComponents">
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="DabCtrlApi">
+    <documentation>Factum DAB Controller API.</documentation>
+    <port name="ApiPort" binding="s0:ApiBinding">
+      <soap:address location="http://localhost/" />
+    </port>
+  </service>
+</definitions>
