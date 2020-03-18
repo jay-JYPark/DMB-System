@@ -10,3 +10,7 @@
 - .NET Remoting, oracle, TCP/UDP/SERIAL 등의 사용
 - protocol data encryption/decryption
 - private 모드를 위해 Contact 필요
+
+![dmb_서비스개념도](https://user-images.githubusercontent.com/62281279/76967214-73e41a00-696a-11ea-858e-003a73b664be.jpg)
+
+![dmb_수신단말](https://user-images.githubusercontent.com/62281279/76967221-75addd80-696a-11ea-806b-449d062ec510.jpg)
