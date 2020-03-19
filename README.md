@@ -7,7 +7,7 @@
 - 통신 세션이 아닌 cell 단위의 불특정 다수의 특수수신기가 재난 데이터를 수신하는 방식으로 확장의 편리함
 - 실제 재난 상황 발생 시 국지적인 전파로 효율성 증대
 - public 모드에서 모든 library와 source 오픈 불가능
-- .NET Remoting, oracle, TCP/UDP/SERIAL 등의 사용
+- .NET Remoting, oracle, TCP/UDP/SERIAL, CDMA 등의 사용
 - protocol data encryption/decryption
 - private 모드를 위해 Contact 필요
 
